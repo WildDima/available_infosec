@@ -1,0 +1,6 @@
+#main
+  .inner
+    %h1= @article.title
+    %span.image.main
+      =image_tag @article.images&.first&.image
+    =@article.body.html_safe

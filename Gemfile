@@ -17,7 +17,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+# gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -30,9 +30,18 @@ gem 'wikipedia-client'
 gem 'wikicloth', '~> 0.8.3'
 #progressbar
 gem 'ruby-progressbar'
+#markup
+gem 'haml-rails', '~> 0.9'
+#interactor
+gem "interactor-rails", "~> 2.0"
+#for rss
+gem 'nokogiri'
+#search gem
+gem 'pg_search'
+
 
 source 'https://rails-assets.org' do
-  gem 'rails-assets-font-awsome', '~>4.2.0'
+  gem 'rails-assets-font-awesome'
 end
 
 group :development, :test do

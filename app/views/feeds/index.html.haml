@@ -1,0 +1,67 @@
+#main
+  .inner
+    %header
+      %h1
+        This is Phantom, a free, fully responsive site
+        %br/
+        template designed by
+        = succeed "." do
+          %a{:href => "http://html5up.net"} HTML5 UP
+      %p Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.
+    %section.tiles
+      #main
+  .inner
+    %h2 Новости
+    - @feeds.each do |feed|
+      %section
+        %h3
+          %a{href: feed[1], target: '_blank'}= feed[0]
+        %small= feed[3]
+        %p= feed[2]
+        %hr/
+%footer#footer
+  .inner
+    %section
+      %h2 Get in touch
+      %form{:action => "#", :method => "post"}
+        .field.half.first
+          %input#name{:name => "name", :placeholder => "Name", :type => "text"}/
+        .field.half
+          %input#email{:name => "email", :placeholder => "Email", :type => "email"}/
+        .field
+          %textarea#message{:name => "message", :placeholder => "Message"}
+        %ul.actions
+          %li
+            %input.special{:type => "submit", :value => "Send"}/
+    %section
+      %h2 Follow
+      %ul.icons
+        %li
+          %a.icon.style2.fa-twitter{:href => "#"}
+            %span.label Twitter
+        %li
+          %a.icon.style2.fa-facebook{:href => "#"}
+            %span.label Facebook
+        %li
+          %a.icon.style2.fa-instagram{:href => "#"}
+            %span.label Instagram
+        %li
+          %a.icon.style2.fa-dribbble{:href => "#"}
+            %span.label Dribbble
+        %li
+          %a.icon.style2.fa-github{:href => "#"}
+            %span.label GitHub
+        %li
+          %a.icon.style2.fa-500px{:href => "#"}
+            %span.label 500px
+        %li
+          %a.icon.style2.fa-phone{:href => "#"}
+            %span.label Phone
+        %li
+          %a.icon.style2.fa-envelope-o{:href => "#"}
+            %span.label Email
+    %ul.copyright
+      %li © Untitled. All rights reserved
+      %li
+        Design:
+        %a{:href => "http://html5up.net"} HTML5 UP

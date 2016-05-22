@@ -1,0 +1,13 @@
+%header#header
+  .inner
+    / Logo
+    %a.logo{:href => "index.html"}
+    =link_to root_path, class: 'logo' do
+      %span.symbol
+        %img{:alt => "", :src => "logo.svg"}/
+      %span.title Available Infosec
+    / Nav
+    %nav
+      %ul
+        %li
+          %a{:href => "#menu"} Menu

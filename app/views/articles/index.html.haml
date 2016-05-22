@@ -1,0 +1,10 @@
+#main
+  .inner
+    =render 'search_form'
+    %h1 База данных
+    -unless params[:query].present?
+      =render 'alphabet_panel'
+    - @articles.each do |article|
+      %section
+        %h2= link_to article.title, article_path(article)
+        %hr/

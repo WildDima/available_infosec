@@ -1,0 +1,6 @@
+-('a'..'z').each do |letter|
+  =link_to letter, articles_path(first_char: letter), class: 'button small'
+%hr
+-('а'..'я').each do |letter|
+  =link_to letter, articles_path(first_char: letter), class: 'button small'
+%hr
