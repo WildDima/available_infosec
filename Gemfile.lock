@@ -183,6 +183,7 @@ GEM
       nokogiri
       twitter-text
     wikipedia-client (1.6.2)
+    will_paginate (3.1.0)
 
 PLATFORMS
   ruby
@@ -194,7 +195,6 @@ DEPENDENCIES
   interactor-rails (~> 2.0)
   jbuilder (~> 2.0)
   jquery-rails
-  nokogiri
   pg
   pg_search
   rails (= 4.2.6)
@@ -208,6 +208,7 @@ DEPENDENCIES
   web-console (~> 2.0)
   wikicloth (~> 0.8.3)
   wikipedia-client
+  will_paginate (~> 3.1)
 
 BUNDLED WITH
    1.12.3

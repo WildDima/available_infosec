@@ -4,3 +4,5 @@
     %span.image.main
       =image_tag @article.images&.first&.image
     =@article.body.html_safe
+    =render 'images', article: @article
+=render 'shared/footer'

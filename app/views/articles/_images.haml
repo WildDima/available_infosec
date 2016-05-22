@@ -1,0 +1,8 @@
+%section
+  %h3 Изображения
+  .box.alt
+    .row.uniform
+      -article.images.each do |image|
+        .4u
+          %span.image.fit
+            =image_tag image.image

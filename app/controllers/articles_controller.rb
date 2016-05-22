@@ -7,6 +7,7 @@ class ArticlesController < ApplicationController
     elsif params[:first_char].present?
       @articles = @articles.find_by_char(params[:first_char][0])
     end
+    @articles = @articles.paginate(page: params[:page], per_page: 20)
   end
 
   def show

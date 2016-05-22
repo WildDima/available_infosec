@@ -34,11 +34,10 @@ gem 'ruby-progressbar'
 gem 'haml-rails', '~> 0.9'
 #interactor
 gem "interactor-rails", "~> 2.0"
-#for rss
-gem 'nokogiri'
 #search gem
 gem 'pg_search'
-
+#pagination
+gem 'will_paginate', '~> 3.1'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-font-awesome'
