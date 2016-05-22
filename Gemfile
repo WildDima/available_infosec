@@ -34,11 +34,13 @@ gem 'ruby-progressbar'
 #markup
 gem 'haml-rails', '~> 0.9'
 #interactor
-gem "interactor-rails", "~> 2.0"
+gem 'interactor-rails', '~> 2.0'
 #search gem
 gem 'pg_search'
 #pagination
 gem 'will_paginate', '~> 3.1'
+#responder
+gem 'responders'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-font-awesome'
@@ -47,6 +49,8 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  #erd
+  gem 'rails-erd'
 end
 
 group :development do

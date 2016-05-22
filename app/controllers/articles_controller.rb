@@ -17,6 +17,5 @@ class ArticlesController < ApplicationController
 
   def set_article
     @article = Article.find(params[:id])
-    # @article = Article.includes(:images).where('articles.id = ?', params[:id])
   end
 end
